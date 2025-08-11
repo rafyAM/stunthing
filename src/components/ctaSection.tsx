@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function CtaSection() {
   return (
@@ -17,13 +18,15 @@ export default function CtaSection() {
               Anda hanya perlu memasukkan data yang diminta, dan sistem kami
               akan memberikan hasil serta rekomendasi yang jelas dan praktis.
             </p>
-            <Button
-              size="lg"
-              className="bg-purple-600 hover:bg-purple-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold w-full sm:w-auto transition-all hover:scale-105"
-            >
-              Mulai Sekarang
-              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 ml-2" />
-            </Button>
+            <Link href="/predict">
+              <Button
+                size="lg"
+                className="bg-purple-600 hover:bg-purple-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base lg:text-lg font-semibold w-full sm:w-auto transition-all hover:scale-105"
+              >
+                Mulai Sekarang
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 ml-2" />
+              </Button>
+            </Link>
           </div>
           <div className="relative order-1 lg:order-2">
             <Image
