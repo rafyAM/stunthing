@@ -27,7 +27,7 @@ export default function WhyCareSection() {
   ]
 
   return (
-    <section className="py-12 sm:py-16 lg:py-24 bg-gray-50">
+    <section className="py-12 sm:py-16 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-4 gap-6 lg:gap-8 items-start">
           {/* Title Section */}

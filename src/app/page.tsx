@@ -8,12 +8,12 @@ import BannerSection from "@/components/bannerSection";
 export default function Home() {
   return (
     <>
-      <Header />
-      <HeroSection />
-      <WhyCareSection />
-      <CtaSection />
-      <BannerSection />
-      <Footer />
+      <div className="">
+        <HeroSection />
+        <WhyCareSection />
+        <CtaSection />
+        <BannerSection />
+      </div>
     </>
   );
 }
