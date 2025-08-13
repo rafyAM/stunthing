@@ -84,6 +84,17 @@ export default function StuntingForm() {
   return (
     <>
       <div className="min-h-screen bg-white flex flex-col items-center justify-center p-4">
+        <div className="max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center">
+          <div className="flex-1 mt-10 md:mt-0">
+            {/* <Image
+              src="https://images.unsplash.com/photo-1627491507220-56e64a9bfa5c"
+              alt="Ilustrasi stunting"
+              className="rounded-lg shadow-lg"
+              width={500}
+              height={500}
+            /> */}
+          </div>
+        </div>
         <div className="max-w-lg w-full bg-white rounded-2xl shadow-lg p-8">
           <h1 className="text-2xl font-bold text-center mb-6 text-gray-900">
             Pemeriksaan Stunting
@@ -197,6 +208,22 @@ export default function StuntingForm() {
           </div>
         </div>
       </div>
+      <section className="bg-purple-500 text-white py-12">
+        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
+          {/* <Image
+            src="https://images.unsplash.com/photo-1584591575325-4d9bde7e5ca5"
+            alt="Anak sehat"
+            className="rounded-lg shadow-lg w-full md:w-1/3"
+            width={500}
+            height={500}
+          /> */}
+          <p className="text-lg font-medium flex-1">
+            Setiap anak berhak tumbuh sehat. Kami ingin membantu Anda mendeteksi
+            dini risiko stunting dan memberikan saran terbaik untuk masa depan
+            anak.
+          </p>
+        </div>
+      </section>
     </>
   );
 }

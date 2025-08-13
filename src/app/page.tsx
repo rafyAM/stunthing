@@ -1,5 +1,3 @@
-import Header from "@/components/header";
-import Footer from "@/components/footer";
 import HeroSection from "@/components/heroSection";
 import WhyCareSection from "@/components/whyCareSection";
 import CtaSection from "@/components/ctaSection";
