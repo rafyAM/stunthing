@@ -41,13 +41,15 @@ export default function StuntingForm() {
     });
   };
 
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     setResult(null);
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/predict/stunting", {
+      const res = await fetch(`${API_URL}/predict/stunting`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -166,7 +168,9 @@ export default function StuntingForm() {
               <div className="mt-6 p-4 bg-gray-50 rounded-xl overflow-x-auto">
                 {result && "prediction" in result ? (
                   <div className="text-center">
-                    <span className="text-lg font-medium">Hasil Prediksi: </span>
+                    <span className="text-lg font-medium">
+                      Hasil Prediksi:{" "}
+                    </span>
                     <span
                       className={`text-xl font-bold ${
                         result.prediction === "Severely Stunted"
